@@ -22,7 +22,7 @@ class simplePID {
 		void setKi(float I);
 		void setKd(float D);
 		float getPoint();
-		float getError(),
+		float getError();
 		float getIntegrator();
 		float getDerivator();
 
@@ -41,6 +41,6 @@ class simplePID {
 		float I_value;
 		float D_value;
 		float PID;
-}
+};
 
 #endif

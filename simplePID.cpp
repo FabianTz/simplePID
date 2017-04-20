@@ -61,38 +61,38 @@ void simplePID::setPoint(float set_point)
 	Derivator = 0;
 }
 
-void setIntegrator(float integrator){
+void simplePID::setIntegrator(float integrator){
 	this->Integrator = integrator;
 }
 
-void setDerivator(float derivator){
+void simplePID::setDerivator(float derivator){
 	this->Derivator = derivator;
 }
 
-void setKp(float P){
+void simplePID::setKp(float P){
 	this->Kp = P;
 }
 
-void setKi(float I){
+void simplePID::setKi(float I){
 	this->Ki = I;
 }
 
-void setKd(float D){
+void simplePID::setKd(float D){
 	this->Kd=  D;
 }
 
-float getPoint(){
+float simplePID::getPoint(){
 	return setpoint;
 }
 
-float getError(){
+float simplePID::getError(){
 	return error;
 }
 
-float getIntegrator(){
+float simplePID::getIntegrator(){
 	return Integrator;
 }
 
-float getDerivator(){
+float simplePID::getDerivator(){
 	return Derivator;
 }
